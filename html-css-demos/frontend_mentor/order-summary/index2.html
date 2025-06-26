@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- displays site properly based on user's device -->
+
+		<link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+
+		<title>Frontend Mentor | Order summary card</title>
+		<style>
+			* {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				background: hsl(225, 100%, 94%);
+				background: hsl(245, 75%, 52%);
+				background: hsl(225, 100%, 98%);
+				background: hsl(223, 47%, 23%);
+				background: hsl(224, 23%, 55%);
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				min-height: 100vh;
+			}
+
+			header {
+				position: fixed;
+				top: 0;
+				z-index: -20;
+			}
+
+			.card {
+				width: 30%;
+				margin: 0 auto;
+			}
+
+			.img-head {
+				width: 100%;
+				height: 200px;
+			}
+
+			.img-head img {
+				width: 100%;
+				height: 100%;
+				border-radius: 10px 10px 0 0;
+			}
+
+			.card-body {
+				background: #fff;
+				padding: 30px 20px;
+				text-align: center;
+				border-radius: 0 0 10px 10px;
+			}
+
+			.summary-text {
+				width: 80%;
+				margin: auto;
+				line-height: 1.3;
+				padding: 15px 0;
+			}
+
+			.row {
+				width: 80%;
+				margin: auto;
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+				background: hsl(224, 23%, 55%);
+				padding: 10px 20px;
+				border-radius: 10px;
+			}
+
+			.plan {
+				text-align: left;
+				flex-grow: 1;
+				padding-left: 15px;
+				line-height: 1.5;
+			}
+
+			.btn {
+				text-decoration: none;
+				background: hsl(245, 75%, 52%);
+				color: #fff;
+				display: block;
+				width: 80%;
+				margin: 20px auto;
+				padding: 1em 0;
+				border-radius: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<header>
+			<img src="images/pattern-background-desktop.svg" alt="images" />
+		</header>
+
+		<section class="card">
+			<div class="img-head">
+				<img src="images/illustration-hero.svg" alt="" />
+			</div>
+
+			<div class="card-body">
+				<h1>Order Summary</h1>
+				<p class="summary-text">
+					You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!
+				</p>
+				<div class="row">
+					<img src="images/icon-music.svg" alt="music-box" />
+					<div class="plan">
+						<h3>Annual Plan</h3>
+						<span>$59.99/year</span>
+					</div>
+					<a href="#">Change</a>
+				</div>
+
+				<a href="#" class="btn">Proceed to Payment</a>
+				<a href="#" class="cancel">Cancel Order</a>
+			</div>
+		</section>
+	</body>
+</html>

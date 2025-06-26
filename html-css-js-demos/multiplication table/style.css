@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+}
+#result {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+#result table {
+  flex-basis: 30%;
+}
+table {
+  /* width: 100%; */
+  margin-bottom: 40px;
+}
+table,
+tr,
+td,
+th,
+caption {
+  border: 1px solid black;
+  border-collapse: collapse;
+  padding: 20px 40px;
+}
+caption {
+  text-transform: uppercase;
+  background: #008000;
+  color: #fff;
+}
+thead {
+  background: rgb(121, 221, 121);
+  color: #fff;
+}
+
+span {
+  padding: 15px;
+  border: 1px solid black;
+  border-collapse: collapse;
+  display: inline-block;
+}

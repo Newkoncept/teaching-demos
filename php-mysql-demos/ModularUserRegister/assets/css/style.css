@@ -1,0 +1,58 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+
+body {
+	height: 100vh;
+	width: 100%;
+	background: lightgray;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+form {
+	width: 50%;
+	margin: auto;
+}
+
+input,
+button {
+	display: block;
+	width: 100%;
+	padding: 20px;
+	margin-bottom: 15px;
+	border: none;
+	border-bottom: 1px solid black;
+	border-left: 1px solid black;
+	background: none;
+	color: white;
+	outline: transparent;
+}
+
+button {
+	border: 1px solid black;
+	background: white;
+	color: black;
+}
+
+.msg {
+	text-transform: uppercase;
+	border: 1px solid green;
+	padding: 10px 30px;
+	margin: 10px auto;
+	width: 100%;
+	text-align: center;
+	color: white;
+}
+
+.error {
+	background: red;
+}
+
+.success {
+	background: green;
+}

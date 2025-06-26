@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --blue: #385073;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+}
+
+.mainContainer {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+header {
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  position: absolute;
+  width: 100%;
+  z-index: 100;
+  padding: 0 30px;
+  font-family: sans-serif;
+}
+
+.logo {
+  color: var(--blue);
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.navbar {
+  background: var(--blue);
+  color: rgba(255, 255, 255, 0.719);
+  display: flex;
+  margin-left: 200px;
+}
+
+.navbar .nav-item {
+  padding: 0 40px;
+  display: inline-block;
+}
+
+.navbar .nav-item:hover,
+.active {
+  color: #fff;
+}
+
+.navRight {
+  display: flex;
+  width: 50px;
+  background: #fff;
+  position: absolute;
+  right: 0;
+  height: 100vh;
+  writing-mode: vertical-lr;
+  align-items: center;
+  overflow: hidden;
+}
+
+.navRight .hamburger {
+  font-size: 30px;
+  margin: 10px 0 40px;
+}
+
+.navRight li a {
+  display: block;
+  padding: 30px 0px;
+}
+
+.navRight li a:hover {
+  background: #385073;
+  color: #fff;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-6 {
+  flex-basis: 50%;
+  padding: 170px 40px 0px 40px;
+  height: 100vh;
+}
+
+.floatImage {
+  width: 250px;
+  height: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 40%;
+  border-top: 9px solid #fff;
+  border-right: 9px solid #fff;
+}
+
+.entryText {
+  font-size: 60px;
+  word-spacing: 5px;
+  color: var(--blue);
+}
+
+.entryText span {
+  display: block;
+}
+
+.entrySpeaker {
+  margin: 30px 0 80px;
+  color: rgba(10, 10, 10, 0.747);
+  font-size: 30px;
+  letter-spacing: 4px;
+  position: relative;
+}
+
+.entrySpeaker::before {
+  content: "";
+  position: absolute;
+  background: rgba(10, 10, 10, 0.747);
+  width: 30px;
+  height: 2px;
+  left: 0;
+  bottom: 50%;
+}
+
+.btn {
+  background: #f7f722;
+  color: var(--blue);
+  padding: 20px 80px;
+  font-size: 18px;
+}
+
+.mainImage {
+  background: url("img1.jpg");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  position: relative;
+}
+
+.carousel {
+  display: flex;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  z-index: 1000;
+}
+
+.carouselLink {
+  display: inline-block;
+  padding: 20px;
+  font-weight: 700;
+}
+
+.carouselLink.left {
+  background: yellow;
+}
+
+.carouselLink.right {
+  background: blue;
+  color: #fff;
+}

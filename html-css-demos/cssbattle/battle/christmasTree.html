@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Battle || Christmas Tree</title>
+
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      :root {
+        --borderWidth: 150px solid;
+      }
+
+      body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #0c1e42;
+        isolation: isolate;
+      }
+
+      .tree,
+      .tree::before,
+      .tree::after {
+        width: 0;
+        height: 0;
+        content: "";
+        box-shadow: 0 2px rgba(0, 0, 0, 0.466);
+      }
+
+      .tree {
+        margin-top: 80px;
+        position: relative;
+        border: 100px solid transparent;
+        border-bottom: var(--borderWidth) #75a33d;
+      }
+
+      .tree::before {
+        position: absolute;
+        left: -80px;
+        bottom: -70px;
+        border: 80px solid transparent;
+        border-bottom: var(--borderWidth) #75a33d;
+      }
+
+      .tree::after {
+        position: absolute;
+        top: -40px;
+        left: -120px;
+        z-index: -100;
+        border: 120px solid transparent;
+        border-bottom: var(--borderWidth) #75a33d;
+      }
+
+      .root {
+        width: 80px;
+        border: 20px solid transparent;
+        border-bottom: 100px solid #855726;
+        position: absolute;
+        bottom: 170px;
+        z-index: -200;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="tree"></div>
+    <div class="root"></div>
+  </body>
+</html>

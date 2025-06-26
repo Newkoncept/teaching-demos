@@ -1,0 +1,118 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: hsl(229, 57%, 11%);
+  /* Pale Blue: hsl(243, 100%, 93%)
+- Grayish Blue: hsl(229, 7%, 55%)
+- Dark Blue: hsl(228, 56%, 26%)
+- Very Dark Blue: hsl(229, 57%, 11%) */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.footer {
+  position: absolute;
+  width: 100%;
+  bottom: -70px;
+  left: 0;
+  z-index: -10;
+}
+
+.row {
+  display: flex;
+  align-items: flex-end;
+  width: 70%;
+}
+
+.left,
+.right {
+  background: hsl(228, 56%, 26%);
+  height: 100%;
+  padding: 30px;
+}
+
+.left {
+  border-radius: 10px 120px 10px 10px;
+  margin-right: 40px;
+  width: 50%;
+}
+
+.left .logo {
+  width: 200px;
+  margin-bottom: 40px;
+}
+
+.left .box img {
+  box-sizing: content-box;
+  width: 20px;
+  height: 20px;
+  background: hsl(229, 57%, 11%);
+  padding: 20px;
+  margin-right: 10px;
+  border-radius: 20px;
+}
+
+.right {
+  width: 70%;
+  border-radius: 10px;
+  color: white;
+  padding-bottom: 70px;
+  position: relative;
+}
+
+.loader {
+  background: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  height: 20px;
+  position: relative;
+  margin-top: 30px;
+}
+
+.percent {
+  background: green;
+  width: 70%;
+  height: inherit;
+  border-radius: inherit;
+  position: relative;
+}
+
+.end {
+  width: 15px;
+  height: inherit;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  right: 0;
+}
+
+.loader p {
+  position: absolute;
+  bottom: -25px;
+}
+
+.loader .full {
+  right: 0;
+}
+
+.tip {
+  padding: 30px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  background: white;
+  color: black;
+  position: absolute;
+  top: -50px;
+  right: 40px;
+}
+
+.tip span {
+  font-size: 40px;
+  font-weight: 700;
+}

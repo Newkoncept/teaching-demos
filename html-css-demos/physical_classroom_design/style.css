@@ -1,0 +1,94 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+:root {
+	--aluminum: #adb2bd;
+}
+
+iframe {
+	width: 100%;
+	position: fixed;
+	z-index: -10;
+}
+
+.row {
+	display: flex;
+}
+
+.col {
+	flex-basis: 20%;
+	background: gray;
+	border: 5px solid var(--aluminum);
+	outline: 10px solid blue;
+	outline-offset: -15px;
+}
+
+.col-sm {
+	height: 10vh;
+}
+
+.col-lg {
+	height: 45vh;
+}
+
+.transparent {
+	background-color: transparent !important;
+}
+
+.container {
+	position: relative;
+	height: 100vh;
+}
+
+.extra {
+	position: absolute;
+	top: 20vh;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+
+.board {
+	width: 50%;
+	height: 50vh;
+	background: white;
+	border: 10px solid var(--aluminum);
+	border-radius: 10px;
+	margin-top: 20px;
+}
+
+.tv {
+	width: 30%;
+	height: 35vh;
+	background: white;
+	margin: 40px 80px 0 0;
+	border: 10px solid var(--aluminum);
+	border-radius: 5px;
+	border-bottom-right-radius: 0;
+	border-bottom-left-radius: 10px;
+	position: relative;
+}
+
+.tv::after {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 15px;
+	bottom: 0;
+	background: black;
+}
+
+.tv::before {
+	content: "";
+	position: absolute;
+	background: black;
+	width: 80%;
+	left: 10%;
+	height: 25px;
+	bottom: -35px;
+	border-bottom-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}

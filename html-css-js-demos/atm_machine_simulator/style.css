@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.mt4 {
+  margin-top: 40px;
+}
+
+.mb4 {
+  margin-bottom: 40px;
+}
+
+.display {
+  background: red;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.welcome-page,
+.transaction-page,
+.balance-page,
+.logout-page,
+.process-body,
+.result-page {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 100vh;
+  background: green;
+  align-items: center;
+  margin: auto;
+  padding: 30px;
+}
+
+.row {
+  width: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+
+.bank-item:hover {
+  color: #fff;
+  cursor: pointer;
+}
+
+.bank-item img {
+  width: 20px;
+  vertical-align: middle;
+  transition: all 0.2s;
+}
+.bank-item:hover img {
+  width: 30px;
+  transition: all 0.2s;
+}
+
+.welcome-page,
+.transaction-page,
+.balance-page,
+.processing-page,
+.result-page {
+  display: none;
+}
+
+.spinner {
+  width: 200px;
+}
+
+.transaction-page .row {
+  margin-bottom: 30px;
+}

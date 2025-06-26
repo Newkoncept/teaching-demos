@@ -1,0 +1,77 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  background: green;
+  height: 50px;
+  position: relative;
+}
+
+.left,
+.right {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.left li a,
+.right li a {
+  color: #fff;
+  padding: 0 20px;
+  line-height: 50px;
+  display: inline-block;
+}
+
+.left li a:hover,
+.right li a:hover {
+  background: red;
+}
+
+.dropdown {
+  position: absolute;
+  right: 40px;
+  top: 10px;
+  color: #fff;
+  font-size: 25px;
+  display: none;
+}
+
+@media screen and (max-width: 680px) {
+  nav {
+    display: none;
+    flex-direction: column;
+    height: initial;
+  }
+  .act {
+    display: block;
+    background: green;
+    color: orange;
+  }
+  .dropdown {
+    display: block;
+    background: green;
+  }
+  .display {
+    display: flex;
+  }
+  .left,
+  .right {
+    flex-direction: column;
+  }
+
+  .left li a,
+  .right li a {
+    display: block;
+  }
+}

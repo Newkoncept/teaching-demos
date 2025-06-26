@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Battle || Christmas Tree</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--borderWidth: 200px;
+				--transX: -200px;
+			}
+
+			body {
+				background: #007065;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				width: 100%;
+			}
+
+			.tree {
+				border: var(--borderWidth) solid transparent;
+				border-bottom: var(--borderWidth) solid #00a79d;
+				position: relative;
+			}
+
+			.tree::before,
+			.tree::after {
+				content: "";
+				border: var(--borderWidth) solid transparent;
+				position: absolute;
+			}
+
+			.tree::before {
+				border-bottom: var(--borderWidth) solid #f5c181;
+				transform: translate(var(--transX), -290px);
+				/* transform: translate(var(--transX), -290px); */
+			}
+
+			.tree::after {
+				border-bottom: var(--borderWidth) solid #ffeecf;
+				transform: translate(var(--transX), -380px);
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="tree"></div>
+	</body>
+</html>

@@ -1,0 +1,22 @@
+h1,
+h2 {
+  text-align: center;
+}
+
+#content {
+  margin-top: 40px;
+}
+.remove-tweet,
+.remove-tweet:hover {
+  float: right;
+  cursor: pointer;
+  color: red;
+  font-weight: bold;
+}
+
+.sendBtn {
+  background-color: rgba(239, 239, 239, 0.3) !important;
+  color: rgba(16, 16, 16, 0.3) !important;
+  border-color: rgba(118, 118, 118, 0.3) !important;
+  cursor: not-allowed !important;
+}

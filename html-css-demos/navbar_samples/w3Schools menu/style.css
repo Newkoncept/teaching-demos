@@ -1,0 +1,96 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  position: relative;
+}
+
+nav {
+  background: #4caf50;
+  line-height: 50px;
+  margin-bottom: 20px;
+  position: fixed;
+  width: 100vw;
+}
+
+.navbar-nav {
+  display: flex;
+  line-height: inherit;
+}
+
+.nav-item > a {
+  padding: 0 15px 0 15px;
+  display: block;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.nav-item a:hover {
+  background: #000;
+}
+
+.active {
+  position: relative;
+}
+
+.active::after {
+  content: "";
+  position: absolute;
+  background: #fff;
+  bottom: 5px;
+  left: 0;
+  height: 1px;
+  width: 50%;
+}
+
+.dropdown .hider {
+  display: none;
+}
+
+.dropdown:hover .hider {
+  display: block;
+}
+
+.dropdown .row {
+  width: 100%;
+  background: #5f5f5f;
+  display: flex;
+  padding: 10px 70px;
+  z-index: 30;
+  position: absolute;
+  left: 0;
+}
+
+.dropdown .col-4 {
+  width: 23%;
+  margin: auto;
+}
+
+.dropdown .col-3 {
+  width: 30%;
+  margin: auto;
+}
+
+.dropdown .dropdown-item,
+.dropdown h2 {
+  color: #f1f1f1;
+  padding-left: 10px;
+}
+
+.dropdown .dropdown-item {
+  display: block;
+}
+
+.dropdown .dropdown-item:hover {
+  background: #ccc;
+}

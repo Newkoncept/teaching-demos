@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Battle || Circle Three Curve</title>
+
+		<link rel="stylesheet" href="style.css">
+		<style>
+			*:nth {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background: #62306d;
+				height: 100vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.container {
+				display: flex;
+				border-radius: 50%;
+			}
+
+			.box {
+				width: 80px;
+				height: 80px;
+				background: #f8ec7e;
+				border-bottom-left-radius: 50%;
+				border-bottom-right-radius: 50%;
+			}
+
+			.box-one {
+				transform: rotate(90deg);
+			}
+
+			.box-two {
+				transform: rotate(180deg) translate(0, 80px);
+			}
+
+			.box-three {
+				transform: rotate(270deg);
+			}
+
+			.box-four {
+				transform: translate(-160px, 80px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box box-one"></div>
+			<div class="box box-two"></div>
+			<div class="box box-three"></div>
+			<div class="box box-four"></div>
+		</div>
+	</body>
+</html>

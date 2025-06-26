@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Battle || Corona Virus</title>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background: #1a4341;
+				height: 100vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.box {
+				width: 100px;
+				height: 100px;
+				border-radius: 50%;
+				background: #f3ac3c;
+				position: relative;
+			}
+
+			.virus,
+			.virus::before,
+			.virus::after {
+				content: "";
+				border-radius: 50%;
+				position: absolute;
+				background: #998235;
+				z-index: 100;
+			}
+
+			.virus {
+				width: 30px;
+				height: 30px;
+				transform: translate(20px, 15px);
+			}
+
+			.virus::before {
+				width: 20px;
+				height: 20px;
+				transform: translate(25px, 50px);
+			}
+
+			.virus::after {
+				width: 10px;
+				height: 10px;
+				transform: translate(50px, 0px);
+			}
+
+			.line,
+			.line::before,
+			.line::after {
+				content: "";
+				width: 10px;
+				height: 180px;
+				background: #f3ac3c;
+				border-radius: 10px;
+				position: absolute;
+			}
+
+			.line {
+				transform: translate(50px, -55px);
+			}
+
+			.line::before {
+				transform: rotate(60deg);
+			}
+
+			.line::after {
+				transform: rotate(-55deg) translate(-10px, 10px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="virus"></div>
+			<div class="line"></div>
+		</div>
+	</body>
+</html>

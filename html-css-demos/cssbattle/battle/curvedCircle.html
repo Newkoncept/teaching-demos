@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Css Battle || Curved Circle</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			:root {
+				--transTime: 3000ms;
+			}
+
+			body {
+				background: #0b2429;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+
+			.circle {
+				/* width: 100px;
+				height: 200px; */
+				/* background: #f3ab3c; */
+				/*
+                body bg: #0b2429
+                top: #f3ab3c
+                middle: #998236
+                bottom: #1b4342
+			    */
+				border-radius: 50%;
+				border: 100px solid transparent;
+				border-top: 100px solid red;
+				border-bottom: 100px solid red;
+				transform: skew(30deg, 50deg) scale(0.4);
+				transition: transform var(--transTime) cubic-bezier(0.23, 1, 0.32, 1), border-left var(--transTime) ease-in-out,
+					outline var(--transTime) ease-in-out;
+			}
+
+			.circle:hover {
+				transform: scale(1.3) rotate(60deg);
+				outline: 5px solid #fff;
+			}
+
+			.circle:hover.third {
+				border-left: 100px solid red;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="circle third"></div>
+	</body>
+</html>

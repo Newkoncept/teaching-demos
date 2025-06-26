@@ -1,0 +1,82 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+html {
+	font-size: 10px;
+}
+
+:root {
+	--padRadius: 10px;
+}
+
+body {
+	background: hsl(233, 47%, 7%);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
+
+.container {
+	width: 80%;
+	margin: auto;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: stretch;
+}
+
+.card {
+	flex-basis: 50%;
+	background: hsl(244, 38%, 16%);
+}
+
+.card-text {
+	padding: 50px 150px 50px 50px;
+	border-radius: var(--padRadius) 0 0 var(--padRadius);
+}
+
+.card-text h1 {
+	color: hsl(0, 0%, 100%);
+	font-size: 3.2rem;
+}
+
+.card-text h1 span {
+	color: hsl(277, 64%, 61%);
+}
+
+.card-text p {
+	color: hsla(0, 0%, 100%, 0.75);
+	margin: 15px 0 50px;
+    font-size: 1.5rem;
+	line-height: 1.5;
+}
+
+.card-text h2 {
+	color: hsl(0, 0%, 100%);
+}
+
+.stat {
+	text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+.card-text .stat span {
+	color: hsla(0, 0%, 100%, 0.75);
+	margin-top: 5px;
+	display: inline-block;
+	font-size: 15px;
+}
+
+.card-image {
+	background: url(images/image-header-desktop.jpg),rgba(153, 33, 228, 0.452);
+	background-size: cover;
+	background-blend-mode: overlay;
+	border-radius: 0 var(--padRadius) var(--padRadius) 0;
+}

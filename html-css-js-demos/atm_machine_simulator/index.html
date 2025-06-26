@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ATM MACHINE</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div class="display">
+      <section class="welcome-page">
+        <h2 class="welcome-text">Welcome to this page</h2>
+        <p class="mb4">What do you want to do today?</p>
+        <div class="mt4 row">
+          <h3 class="bank-item" onclick="withdrawal()"><img src="img/left.png" alt="left_btn" /> Withdraw</h3>
+          <h3 class="bank-item" onclick="balance()">Check Balance <img src="img/right.png" alt="right_btn" /></h3>
+        </div>
+      </section>
+
+      <section class="transaction-page">
+        <h2 class="welcome-text">How much do you want to withdraw</h2>
+        <div class="mt4 row">
+          <h3 class="bank-item" onclick="deduct('500')"><img src="img/left.png" alt="left_btn" /> 500</h3>
+          <h3 class="bank-item" onclick="deduct('15000')">15000 <img src="img/right.png" alt="right_btn" /></h3>
+        </div>
+        <div class="row">
+          <h3 class="bank-item" onclick="deduct('1000')"><img src="img/left.png" alt="left_btn" /> 1000</h3>
+          <h3 class="bank-item" onclick="deduct('20000')">20000 <img src="img/right.png" alt="right_btn" /></h3>
+        </div>
+        <div class="row">
+          <h3 class="bank-item" onclick="deduct('2000')"><img src="img/left.png" alt="left_btn" /> 2000</h3>
+          <h3 class="bank-item" onclick="deduct('30000')">30000 <img src="img/right.png" alt="right_btn" /></h3>
+        </div>
+        <div class="row">
+          <h3 class="bank-item" onclick="deduct('5000')"><img src="img/left.png" alt="left_btn" /> 5000</h3>
+          <h3 class="bank-item" onclick="deduct('40000')">40000 <img src="img/right.png" alt="right_btn" /></h3>
+        </div>
+        <div class="row">
+          <h3 class="bank-item" onclick="deduct('10000')"><img src="img/left.png" alt="left_btn" /> 10000</h3>
+
+          <h3 class="bank-item" onclick="balance()">Check Balance <img src="img/right.png" alt="right_btn" /></h3>
+        </div>
+      </section>
+
+      <section class="balance-page">
+        <h2 class="welcome-text mb4">Account Details</h2>
+        <h3 id="balance_text">Your balance is: 0</h3>
+        <div class="mt4 row">
+          <h3 class="bank-item" onclick="withdrawal()"><img src="img/left.png" alt="left_btn" /> Withdraw</h3>
+          <h3 class="bank-item" onclick="logout()">Logout <img src="img/right.png" alt="right_btn" /></h3>
+        </div>
+      </section>
+
+      <section class="result-page">
+        <h2 class="welcome-text mb4">Completed......</h2>
+        <h3 id="resultText">Your balance is: 0</h3>
+        <div class="mt4 row">
+          <h3 class="bank-item" onclick="withdrawal()"><img src="img/left.png" alt="left_btn" /> Withdraw</h3>
+          <h3 class="bank-item" onclick="logout()">Logout <img src="img/right.png" alt="right_btn" /></h3>
+        </div>
+      </section>
+
+      <section class="processing-page">
+        <div class="process-body">
+          <h2 class="welcome-text mb4">Processing......</h2>
+          <img src="img/spinner.gif" alt="spinner_img" class="spinner" />
+        </div>
+      </section>
+
+      <section class="logout-page">
+        <h2 class="welcome-text mb4">WELCOME TO OUR BANK</h2>
+        <h3 class="bank-item" onclick="transact()">Make Transaction <img src="img/right.png" alt="right_btn" /></h3>
+      </section>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

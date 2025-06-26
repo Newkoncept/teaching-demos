@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Box sample for css battle</title>
+		<style>
+			*,
+			*::before,
+			*::after {
+				padding: 0;
+				margin: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				background: #0b2429;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+			}
+
+			.container {
+				transform-style: preserve-3d;
+			}
+
+			.container div {
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 150px;
+				height: 150px;
+			}
+
+			.box {
+				isolation: isolate;
+				background: #f3ac3c;
+				transform: rotate(45deg) skew(-5deg) translate(-6px);
+				z-index: -1;
+			}
+
+			.leftBox {
+				background: #998235;
+				transform: rotate3d(15, -10, -7, 70deg) translate(-56px, -258px);
+				z-index: 20;
+			}
+
+			.rightBox {
+				/* z-index: 100; */
+				background: #6d8582;
+				transform: rotate3d(200, 390, 237, 70deg) translate(30px, -175px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="container">
+			<div class="box"></div>
+			<div class="leftBox"></div>
+			<div class="rightBox"></div>
+		</div>
+	</body>
+</html>

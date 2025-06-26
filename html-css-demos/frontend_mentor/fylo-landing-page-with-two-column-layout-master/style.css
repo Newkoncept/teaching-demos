@@ -1,0 +1,186 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul,
+li {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-6 {
+  flex-basis: 48%;
+  width: 48%;
+}
+
+.justify-start {
+  justify-content: flex-start;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.px-5 {
+  padding: 50px;
+}
+
+.px-2 {
+  padding: 20px;
+}
+
+.gen-padding {
+  padding: 40px 20px;
+}
+
+/* Nav */
+.logo {
+  width: 90px;
+}
+
+.nav-item {
+  padding: 20px;
+}
+
+header form {
+  display: flex;
+}
+
+input {
+  padding: 10px;
+  border-radius: 0;
+  width: 60%;
+  border: 1px solid lightgray;
+  margin-right: 20px;
+}
+
+button {
+  padding: 10px 0px;
+  border: none;
+  width: 20%;
+}
+
+.bg-blue {
+  background-color: blue;
+  color: white;
+}
+
+.bg-lightblue {
+  background-color: lightblue;
+}
+
+.bg-darkblue {
+  background-color: darkblue;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 35px;
+}
+
+header p {
+  max-width: 85%;
+  font-size: 18px;
+}
+
+.productive {
+  padding-top: 90px;
+  background: url(images/bg-curve-desktop.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.productive a {
+  color: green;
+  display: inline-block;
+  border-bottom: 1px solid green;
+}
+
+.card {
+  background: white;
+  width: 55%;
+  padding: 20px;
+  box-shadow: 0 0 10px rgb(83, 81, 81);
+  border-radius: 10px;
+  margin-top: 30px;
+}
+
+.card-details {
+  margin-top: 20px;
+  line-height: 1;
+}
+
+.quote-img {
+  width: 20px;
+}
+
+.client-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-right: 7px;
+}
+
+.card-details h3 {
+  font-size: 16px;
+  margin: 0;
+}
+
+.card-details span {
+  font-size: 13px;
+}
+
+.subscribe p {
+  max-width: 70%;
+}
+
+.subscribe input {
+  display: block;
+}
+
+.subscribe button {
+  width: 30%;
+  margin-top: 10px;
+}
+
+footer a,
+span {
+  color: rgb(208, 200, 200);
+}
+
+footer img {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer .row div:first-child .row {
+  margin-bottom: 10px;
+}
+
+footer .row div {
+  flex-grow: 1;
+}

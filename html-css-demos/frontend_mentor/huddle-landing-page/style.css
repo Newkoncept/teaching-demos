@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background: url(images/bg-desktop.svg), rgba(128, 0, 128, 0.445);
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container {
+	width: 90%;
+	margin: auto;
+}
+
+.logo {
+	width: 120px;
+}
+
+.row {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.col {
+	flex-basis: 50%;
+}
+
+.mockup {
+	width: 100%;
+}
+
+.col-2 {
+	padding: 60px;
+	color: #fff;
+}
+
+.col-2 h1 {
+	margin-bottom: 20px;
+}
+
+.col-2 p {
+	line-height: 1.5;
+}
+
+.btn {
+	text-decoration: none;
+	background: #fff;
+	color: purple;
+	padding: 0.7em 3em;
+	display: inline-block;
+	border-radius: 50px;
+	margin-top: 20px;
+}

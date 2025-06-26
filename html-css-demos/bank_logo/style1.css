@@ -1,0 +1,563 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 100%;
+	flex-wrap: wrap;
+	padding: 0 10px;
+	overflow-x: hidden;
+	font-family: Arial, Helvetica, sans-serif;
+
+	color: white;
+}
+
+section {
+	flex-basis: 20%;
+	margin: 20px 0 30px;
+}
+
+/* GTBANK */
+.gtco {
+	position: relative;
+	background: #e14206;
+	height: 150px;
+	width: 150px;
+	display: flex;
+	align-items: flex-end;
+	justify-content: center;
+	padding-bottom: 20px;
+	font-size: 40px;
+	font-weight: 700;
+}
+
+.gtco::before {
+	content: "";
+	background: white;
+	height: 40px;
+	width: 40px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+/* ACCESS BANK LOGO 1 */
+.access1 {
+	border-left: 20px solid #d97265;
+	height: 50px;
+	line-height: 50px;
+	width: max-content;
+	background: blue;
+	font-size: 40px;
+	font-weight: 600;
+	padding: 0 10px;
+}
+
+.access1 span {
+	font-size: 25px;
+	color: #d97265;
+	font-weight: 900;
+}
+
+/* ACCESS BANK LOGO 2 */
+.access-old {
+	width: max-content;
+	display: flex;
+	align-items: center;
+}
+
+.access2 {
+	width: max-content;
+	position: relative;
+	overflow: hidden;
+	transform: rotate(40deg);
+}
+
+.access2::before {
+	content: "";
+	position: absolute;
+	top: -17px;
+	left: -32px;
+	width: 40px;
+	height: 40px;
+	transform: skew(20deg, 20deg) rotate(-40deg);
+	background-color: white;
+}
+
+.access2 .row {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.access-old .box2,
+.access-old .box1,
+.access-old .box {
+	border: 5px solid #d97265;
+	background-color: white;
+}
+
+.access-old .box2 {
+	width: 80px;
+	height: 80px;
+}
+
+.access-old .box1 {
+	width: 60px;
+	height: 60px;
+}
+
+.access-old .box {
+	width: 40px;
+	height: 40px;
+}
+
+.access-old p {
+	font-size: 80px;
+	padding-left: 30px;
+	font-weight: 700;
+
+	color: blue;
+	margin-top: -20px;
+}
+
+/* ZENITH BANK */
+.zenith {
+	width: 250px;
+	min-height: 120px;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	justify-content: space-between;
+	position: relative;
+}
+
+.zen-logo {
+	width: 200px;
+	position: absolute;
+	top: 60px;
+	left: 40px;
+	border: 20px solid transparent;
+	border-bottom: 25px solid #e61b23;
+	transform: skew(-50deg);
+}
+
+.zen-logo::before {
+	content: "";
+	position: absolute;
+	bottom: -10px;
+	left: 43px;
+	border: 20px solid transparent;
+	border-bottom: 80px solid #e61b23;
+	transform: skew(-35deg) rotate(20deg);
+}
+
+.zen-logo::after {
+	content: "";
+	position: absolute;
+	right: -15px;
+	bottom: -25px;
+	border: 20px solid transparent;
+	border-right: 20px solid #e61b23;
+	border-bottom: 20px solid #e61b23;
+	transform: skew(40deg);
+}
+
+.zen-before {
+	left: 15px;
+	top: unset;
+	transform: rotate(180deg) skew(-50deg);
+	border-bottom-color: #7c7e81;
+}
+
+.zen-before.zen-logo::before {
+	transform: skew(-35deg) rotate(20deg);
+	border-bottom-color: #7c7e81;
+}
+
+.zen-before.zen-logo::after {
+	border-right-color: #7c7e81;
+	border-bottom-color: #7c7e81;
+}
+
+.zenith p {
+	color: #7c7e81;
+	font-size: 40px;
+	font-weight: 700;
+	margin-top: 110px;
+	letter-spacing: 5px;
+}
+
+/* FCMB BANK */
+.fcmb {
+	background: purple;
+	width: max-content;
+	padding: 20px;
+	font-size: 30px;
+	font-weight: 600;
+	color: white;
+	letter-spacing: 7px;
+	text-align: center;
+}
+
+.fcmb-line {
+	background: orange;
+	height: 7px;
+	margin-bottom: 2px;
+}
+
+.fcmb .top {
+	margin-top: 10px;
+	border-top-left-radius: 20px;
+}
+
+.fcmb .bottom {
+	border-bottom-left-radius: 20px;
+}
+
+/* POLARIS BANK */
+.polaris {
+	background: purple;
+	width: max-content;
+	padding: 20px 30px;
+	color: white;
+	letter-spacing: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.polaris .logo-stack {
+	background: orange;
+	height: 20px;
+	width: 70px;
+	transform: rotate(-40deg) skew(40deg, 10deg);
+	margin-bottom: 2px;
+}
+
+.polaris-p {
+	margin-top: 20px;
+}
+
+/* FIDELITY BANK */
+.fidelity {
+	display: flex;
+	position: relative;
+	width: max-content;
+	align-items: center;
+	font-size: 40px;
+	color: blue;
+}
+
+.fidelity .logo-stack {
+	height: 45px;
+	width: 40px;
+	background: green;
+	position: relative;
+	margin-right: 3px;
+	overflow: hidden;
+}
+
+.fidelity .logo-stack::after {
+	content: "";
+	width: 40px;
+	height: 75px;
+	border-radius: 50%;
+	background-color: blue;
+	border: 1px solid white;
+	position: absolute;
+	left: -12px;
+	top: -25px;
+	transform: rotate(40deg);
+}
+
+/* STERLING BANK */
+.sterling {
+	width: max-content;
+	display: flex;
+	align-items: flex-end;
+	font-size: 35px;
+	color: lightgray;
+}
+
+.sterling .logo {
+	width: 50px;
+	height: 70px;
+	background: red;
+	margin-right: 5px;
+	border-radius: 50%;
+	position: relative;
+}
+
+.sterling .logo::after {
+	content: "";
+	position: absolute;
+	top: 12px;
+	right: 12px;
+	background-color: white;
+	width: 20px;
+	height: 25px;
+	border-radius: 50%;
+}
+
+/* CITIBANK */
+.citibank {
+	font-size: 40px;
+	font-weight: 700;
+	color: white;
+	background: blue;
+	width: max-content;
+	padding: 30px 20px;
+}
+
+.citibank span {
+	font-weight: 100;
+}
+
+.citibank p {
+	position: relative;
+}
+
+.citibank p::after {
+	content: "";
+	position: absolute;
+	top: -5px;
+	left: 8px;
+	width: 48px;
+	height: 200px;
+	border: solid 9px transparent;
+	border-top-color: red;
+	border-radius: 50%;
+}
+
+.citibank p::before {
+	content: "R";
+	position: absolute;
+	top: -5px;
+	right: -10px;
+	font-size: 8px;
+	border: 1px solid white;
+	padding: 2px;
+	border-radius: 50%;
+}
+
+/* UBA */
+.uba {
+	color: red;
+}
+
+.uba p {
+	font-size: 40px;
+	font-weight: 700;
+	letter-spacing: 5px;
+}
+
+.uba span {
+	font-style: italic;
+}
+
+.uba .main-logo {
+	display: flex;
+	align-items: center;
+}
+
+.uba .logo {
+	width: 34px;
+	height: 15px;
+	background: red;
+	border-bottom-right-radius: 10px;
+	border-top-right-radius: 30px;
+	position: relative;
+	margin: 11px 0 0 5px;
+	transform: skew(-10deg);
+}
+
+.uba .logo::after {
+	content: "";
+	position: absolute;
+	top: -40px;
+	left: -15px;
+	transform: skew(30deg);
+	border: 20px solid transparent;
+	border-bottom: 30px solid red;
+	border-radius: 20px;
+}
+
+.uba .uba-two {
+	transform: skew(-10deg) rotate(180deg);
+	margin: 0 0 40px -15px;
+}
+
+/* JAIZ BANK */
+.jaiz {
+	text-align: center;
+	color: green;
+	width: max-content;
+	position: relative;
+}
+
+.jaiz .jaiz-text {
+	font-size: 60px;
+	font-weight: 700;
+}
+
+.jaiz-text span {
+	font-size: 24px;
+	margin-left: -10px;
+	font-weight: 500;
+}
+
+.jaiz p {
+	font-size: 15px;
+	font-weight: 600;
+}
+
+.jaiz .box {
+	border: 2px solid green;
+	width: 30px;
+	height: 25px;
+	position: absolute;
+	top: 0px;
+	right: 20px;
+}
+
+.jaiz .box::before {
+	content: "";
+	border: 2px solid green;
+	width: 25px;
+	height: 20px;
+	position: absolute;
+	bottom: -10px;
+	right: -15px;
+}
+
+.jaiz .box::after {
+	content: "";
+	width: 8px;
+	height: 8px;
+	bottom: 2px;
+	right: 2px;
+	position: absolute;
+	background: green;
+}
+
+/* WEMA BANK */
+.wema {
+	width: max-content;
+	background-color: purple;
+	padding: 20px 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	font-size: 40px;
+	font-weight: 700;
+	color: white;
+}
+
+.wema .logo {
+	display: flex;
+	transform: skew(-40deg);
+
+}
+
+.wema .line {
+	width: 9px;
+	border-right: 3px solid white;
+}
+
+.wema .top {
+	border-top: 3px solid white;
+	/*display:none;*/
+}
+
+.wema .bottom {
+	border-bottom: 3px solid white;
+}
+
+.wema .max {
+	height: 70px;
+}
+
+.wema .min {
+	height: 63px;
+}
+
+.wema .min-small {
+	height: 55px;
+	position: relative;
+}
+
+.wema .small {
+	height: 45px;
+	position: relative;
+}
+
+.wema .cross {
+	position: absolute;
+	bottom: -23px;
+	left: -35px;
+	width: 10px;
+	height: 85px;
+	border-right: 3px solid white;
+	border-radius: 50px;
+	transform: rotate(-60deg);
+}
+
+/* UNITY BANK */
+.unity {
+	text-align: center;
+	width: max-content;
+}
+
+.unity .logo {
+	margin-bottom: -10px;
+}
+
+.unity .logo p {
+	font-size: 60px;
+	color: #19303a;
+}
+
+.unity .logo span {
+	color: #83ac56;
+	margin-left: -13.5px;
+	position: relative;
+}
+
+.unity .logo span::before {
+	content: "";
+	position: absolute;
+	bottom: 12px;
+	left: 4px;
+	width: 5.5px;
+	height: 16px;
+	background: #19303a;
+}
+
+.unity .logo span::after {
+	content: "";
+	position: absolute;
+	bottom: 24px;
+	left: 3px;
+	width: 8px;
+	height: 8px;
+	background: white;
+	border-bottom-right-radius: 20px;
+	border-top-left-radius: 20px;
+}
+
+.unity-bank {
+	color: #19303a;
+}
+
+.unity .succeed {
+	margin-top: 10px;
+	color: #83ac56;
+}

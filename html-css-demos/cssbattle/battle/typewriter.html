@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Css Battle || Typewriter</title>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				background: #0b2429;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				height: 100vh;
+				width: 100%;
+				color: #fff;
+				font-size: 16px;
+				position: relative;
+			}
+			.box {
+				font-size: 2rem;
+			}
+
+			.box::after {
+				content: "";
+				position: absolute;
+				width: 17rem;
+				height: 40px;
+				background: #0b2429;
+				transform: translate(-17rem);
+				animation-name: typewriter;
+				animation-duration: 17000ms;
+				animation-iteration-count: infinite;
+			}
+
+			@keyframes typewriter {
+				100% {
+					width: 0rem;
+					transform: translate(0rem);
+				}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">My Name is Gbenga</div>
+	</body>
+</html>
+

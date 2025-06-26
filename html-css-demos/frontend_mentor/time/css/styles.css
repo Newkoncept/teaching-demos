@@ -1,0 +1,174 @@
+* {
+  box-sizing: border-box;
+  color: inherit;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+h1, h2, h3, p {
+  margin-top: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  max-width: 100%;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+body {
+  background: #0f1424;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile {
+  color: white;
+  width: 15%;
+}
+
+.profile .top {
+  padding: 20px;
+  background: #5847eb;
+  border-radius: 10px;
+}
+
+.profile .top img {
+  width: 60px;
+  border: 2px solid #fff;
+  border-radius: 100%;
+  margin-bottom: 30px;
+  display: block;
+}
+
+.profile .top > span {
+  font-size: 13px;
+}
+
+.profile .top h2 {
+  font-weight: 300;
+}
+
+.profile .top h2 span {
+  display: block;
+}
+
+.profile .bottom {
+  border-radius: 10px;
+  background: #1c1f4a;
+  padding: 20px;
+}
+
+.profile .bottom a {
+  display: block;
+  padding: 10px 0;
+  color: white;
+}
+
+.details {
+  width: 83%;
+}
+
+.details.row {
+  flex-wrap: wrap;
+}
+
+.details .card {
+  width: 30%;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.details .card .top {
+  height: 60px;
+  border-radius: 10px 10px 0 0;
+  position: relative;
+  overflow: hidden;
+  z-index: -2;
+}
+
+.details .card .top img {
+  position: absolute;
+  width: 50px;
+  right: 10px;
+  top: -3px;
+}
+
+.details .card .body {
+  background: #1c1f4a;
+  padding: 20px;
+  border-radius: 10px;
+  margin-top: -30px;
+}
+
+.details .card .row {
+  color: white;
+  text-transform: capitalize;
+  align-items: center;
+  font-weight: 700;
+}
+
+.details .card .row p {
+  font-size: 15px;
+}
+
+.details .card .row p:nth-child(2) {
+  font-size: 20px;
+}
+
+.details .card h2 {
+  font-size: 40px;
+  font-weight: 300;
+  margin-bottom: 8px;
+}
+
+.details .card .duration {
+  font-size: 10px;
+  font-weight: 100;
+  letter-spacing: 1px;
+}
+
+.details .work .top {
+  background: #ff5c7c;
+}
+
+.details .play .top {
+  background: #56c2e6;
+}
+
+.details .study .top {
+  background: #ff5c7c;
+}
+
+.details .exercise .top {
+  background: #4acf81;
+}
+
+.details .social .top {
+  background: #7536d3;
+}
+
+.details .self-care .top {
+  background: #f1c65b;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Battle || Three Square</title>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background: #f3ac3c;
+				height: 100vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.box {
+				width: 200px;
+				height: 200px;
+				background: #1a4341;
+				position: relative;
+			}
+
+			.box::before,
+			.box::after {
+				content: "";
+				position: absolute;
+				bottom: 0;
+			}
+
+			.box::before {
+				width: 100px;
+				height: 100px;
+				background: #998235;
+				left: 0;
+			}
+
+			.box::after {
+				width: 50px;
+				height: 50px;
+				background: #f3ac3c;
+				left: 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box"></div>
+	</body>
+</html>

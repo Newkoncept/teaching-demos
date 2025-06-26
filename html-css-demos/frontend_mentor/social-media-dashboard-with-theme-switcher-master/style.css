@@ -1,0 +1,42 @@
+body {
+  color: #fff;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  width: 20%;
+  padding: 20px;
+  text-align: center;
+  border-top: 2px solid blue;
+  border-radius: 10px 10px 0 0;
+}
+
+.card h2 {
+  font-size: 50px;
+}
+
+.summary {
+  display: flex;
+  justify-content: space-between;
+}
+
+.bg-card {
+  background: hsl(228, 28%, 20%);
+}
+
+.bg-card1 {
+  background: hsl(227, 47%, 96%);
+  color: black;
+}
+
+.bg-body {
+  background: hsl(230, 17%, 14%);
+}
+
+button {
+  font-size: 40px;
+}

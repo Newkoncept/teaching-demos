@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Date of Birth Originator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>DATE OF BIRTH AND AGE GENERATOR</h1>
+      <hr />
+      <form id="selector">
+        <h2>Select your preferred method</h2>
+        <select id="selectorFormValue">
+          <option value="age">Age</option>
+          <option value="dob">Date of Birth</option>
+        </select>
+        <input type="submit" value="Submit" />
+      </form>
+
+      <form id="formTwo">
+        <h2>Enter your age</h2>
+        <input type="number" id="ageInput" />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <form id="formThree">
+        <h2>Enter your Date of Birth</h2>
+        <input type="number" id="dobInput" />
+        <input type="submit" value="Submit" />
+      </form>
+
+      <div class="result">
+        <h2>Your Result</h2>
+        <h3>Your Age is: <span class="ageOutput"></span></h3>
+        <h3>Your Date of Birth is: <span class="dobOutput"></span></h3>
+      </div>
+    </div>
+
+    <script src="app.js"></script>
+  </body>
+</html>

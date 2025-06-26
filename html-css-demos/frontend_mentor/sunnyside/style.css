@@ -1,0 +1,293 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* :root {
+  --soft-red: hsl(7, 99%, 70%);
+  - Yellow: hsl(51, 100%, 49%)
+  - Dark desaturated cyan (graphic design text): hsl(167, 40%, 24%)
+  - Dark blue (photography text): hsl(198, 62%, 26%)
+  - Dark moderate cyan (footer): hsl(168, 34%, 41%)
+  
+  ### Neutral
+  
+  - Very dark desaturated blue: hsl(212, 27%, 19%)
+  - Very dark grayish blue: hsl(213, 9%, 39%)
+  - Dark grayish blue: hsl(232, 10%, 55%)
+  - Grayish blue: hsl(210, 4%, 67%)
+  - White: hsl(0, 0%, 100%)
+
+} */
+
+body {
+  line-height: 1.5;
+  font-size: 18px;
+  /* color: var(--soft-red); */
+}
+
+ul,
+li,
+a {
+  text-decoration: none;
+  list-style: none;
+}
+
+a {
+  color: inherit;
+  cursor: pointer;
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+}
+
+.col-6 {
+  flex-basis: 50%;
+}
+
+.col-4 {
+  flex-basis: 33.33%;
+}
+
+/* 
+      BANNER AND HEADER SECTION
+                                  */
+.banner {
+  background: url("images/desktop/image-header.jpg");
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 100px;
+  color: #fff;
+  position: relative;
+  width: 100%;
+}
+
+.banner h1 {
+  font-size: 3em;
+  font-weight: 800;
+}
+
+.banner img {
+  width: 25px;
+  height: 80px;
+  margin-top: 60px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  height: 40px;
+  padding: 30px 20px;
+  align-items: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+}
+
+nav .logo {
+  color: #fff;
+}
+
+.navbar {
+  display: flex;
+}
+
+.nav-item {
+  padding: 0 20px;
+  color: #fff;
+  display: inline-block;
+  line-height: 40px;
+}
+
+.nav-item:hover {
+  background: orange;
+}
+
+.contactBtn {
+  text-transform: uppercase;
+  color: #000;
+  background: #fff;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* 
+      ABOUT SECTION 
+                        */
+.aboutBox {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.boxContainer {
+  padding: 150px 0;
+  width: 60%;
+}
+
+.boxContainer a {
+  font-weight: 600;
+}
+
+.aboutBox h3,
+.aboutBox p {
+  margin-bottom: 25px;
+}
+
+.aboutBox h3 {
+  font-size: 40px;
+}
+
+.aboutBoxTwo {
+  background: url("images/desktop/image-transform.jpg");
+}
+
+.aboutBoxThree {
+  background: url("images/desktop/image-stand-out.jpg");
+}
+
+.aboutBoxFive {
+  background: url("images/desktop/image-graphic-design.jpg");
+}
+
+.aboutBoxSix {
+  background: url("images/desktop/image-photography.jpg");
+}
+
+.aboutBoxTwo,
+.aboutBoxThree,
+.aboutBoxFive,
+.aboutBoxSix {
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.aboutBoxFive,
+.aboutBoxSix {
+  display: flex;
+  background-position: top;
+  justify-content: flex-end;
+}
+
+.boxContainerTwo {
+  width: 47%;
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.boxContainerTwo h3 {
+  font-size: 25px;
+}
+
+/* 
+      Testimonial Section
+                            */
+
+.testimonial {
+  width: 80%;
+  margin: auto;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.testimonialHead {
+  text-transform: uppercase;
+  color: rgba(128, 128, 128, 0.7);
+  margin-bottom: 70px;
+}
+
+.testimonial .card {
+  padding: 0 35px;
+  border-right: 1px solid #fff;
+}
+
+.testimonial .card img {
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-bottom: 50px;
+}
+
+.testimonial .card-details {
+  margin-top: 60px;
+  line-height: 1.8;
+}
+
+.testimonial .card-details .clientPost {
+  color: rgba(128, 128, 128, 0.7);
+}
+
+/* 
+      PROJECT SECTION 
+                        */
+.projectOne {
+  background: url("images/desktop/image-gallery-milkbottles.jpg");
+}
+
+.projectTwo {
+  background: url("images/desktop/image-gallery-orange.jpg");
+}
+
+.projectThree {
+  background: url("images/desktop/image-gallery-cone.jpg");
+}
+
+.projectFour {
+  background: url("images/desktop/image-gallery-sugarcubes.jpg");
+}
+
+.projectBox {
+  height: 400px;
+  flex-basis: 25%;
+  background-position: bottom;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* 
+      FOOTER SECTION 
+                        */
+footer {
+  background: chocolate;
+  padding: 30px 0 40px;
+  color: white;
+}
+
+.footerContainer {
+  width: 50%;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.footerLogo,
+nav .logo {
+  font-size: 30px;
+  font-weight: 700px;
+}
+
+.footerNav {
+  display: flex;
+  justify-content: center;
+  margin: 15px 0 50px;
+}
+
+.footerNav a {
+  display: inline-block;
+  padding: 0 20px;
+}
+
+footer .icon {
+  width: 35px;
+  padding: 0 20px 0 0;
+}

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Counter</title>
+    <script>
+      let counterr = 0;
+      let counterrDown = 60;
+
+      function cU() {
+        let counterUp = document.querySelector("#countUp");
+        if (counterr < 60) {
+          counterr++;
+          counterUp.textContent = counterr;
+        }
+      }
+      function cD() {
+        let counterDown = document.querySelector("#countDown");
+        if (counterrDown > 0) {
+          counterrDown--;
+          counterDown.textContent = counterrDown;
+        }
+      }
+
+      document.addEventListener("DOMContentLoaded", () => {
+        setInterval(cU, 1000);
+        setInterval(cD, 1000);
+
+        if (counterr == 60) {
+          alert("yes");
+        }
+      });
+    </script>
+  </head>
+  <body>
+    <h2>Count Up</h2>
+    <h3 id="countUp">0</h3>
+    <p id="cuF"></p>
+    <h2>Count Down</h2>
+    <h3 id="countDown">60</h3>
+    <p id="cdF"></p>
+  </body>
+</html>

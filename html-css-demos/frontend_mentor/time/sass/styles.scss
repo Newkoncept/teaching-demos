@@ -1,0 +1,143 @@
+@import "reset";
+@import "variables";
+@import "color";
+@import "utilities";
+
+body {
+  background: $very-dark-blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.profile {
+  color: white;
+  width: 15%;
+
+  .top {
+    padding: 20px;
+    background: $blue;
+    border-radius: $card-radius;
+
+    img {
+      width: 60px;
+      border: 2px solid #fff;
+      border-radius: 100%;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    & > span {
+      font-size: 13px;
+    }
+
+    h2 {
+      font-weight: 300;
+
+      span {
+        display: block;
+      }
+    }
+  }
+
+  .bottom {
+    border-radius: $card-radius;
+    background: $dark-blue;
+    padding: 20px;
+
+    a {
+      display: block;
+      padding: 10px 0;
+      color: white;
+    }
+  }
+}
+
+.details {
+  width: 83%;
+  //   flex-grow: 2;
+
+  &.row {
+    flex-wrap: wrap;
+  }
+
+  .card {
+    width: 30%;
+    color: white;
+    margin-bottom: 30px;
+
+    .top {
+      height: 60px;
+      border-radius: $card-radius $card-radius 0 0;
+      position: relative;
+      overflow: hidden;
+      z-index: -2;
+
+      img {
+        position: absolute;
+        width: 50px;
+        right: 10px;
+        top: -3px;
+      }
+    }
+
+    .body {
+      background: $dark-blue;
+      padding: 20px;
+      border-radius: $card-radius;
+      margin-top: -30px;
+    }
+
+    .row {
+      color: white;
+      text-transform: capitalize;
+      align-items: center;
+      font-weight: 700;
+
+      p {
+        font-size: 15px;
+      }
+
+      p:nth-child(2) {
+        font-size: 20px;
+      }
+    }
+
+    h2 {
+      font-size: 40px;
+      font-weight: 300;
+      margin-bottom: 8px;
+    }
+
+    .duration {
+      font-size: 10px;
+      font-weight: 100;
+      letter-spacing: 1px;
+    }
+  }
+
+  .work .top {
+    background: $light-red;
+  }
+
+  .play .top {
+    background: $soft-blue;
+  }
+
+  .study .top {
+    background: $light-red;
+  }
+
+  .exercise .top {
+    background: $lime-green;
+  }
+
+  .social .top {
+    background: $violet;
+  }
+
+  .self-care .top {
+    background: $soft-orange;
+  }
+}

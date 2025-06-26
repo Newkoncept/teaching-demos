@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Container</title>
+
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				box-sizing: border-box;
+			}
+
+			body {
+				font-family: Arial, Helvetica, sans-serif;
+			}
+
+			ul,
+			li,
+			a {
+				list-style: none;
+				text-decoration: none;
+			}
+
+			.container {
+				width: 80%;
+				margin: 0 auto;
+			}
+
+			nav {
+				height: 50px;
+				line-height: 50px;
+				/* box-shadow: 0 2px rgba(31, 30, 30, 0.603); */
+			}
+
+			nav .container {
+				display: flex;
+				justify-content: space-between;
+				align-items: center;
+			}
+
+			.logo {
+				width: 30px;
+				height: 30px;
+				display: block;
+			}
+
+			.navbar {
+				display: flex;
+			}
+
+			.nav-item {
+				padding: 0 8px;
+				display: inline-block;
+				font-weight: 600;
+				position: relative;
+				color: black;
+			}
+
+			.nav-item::before,
+			.nav-item::after {
+				content: "";
+				position: absolute;
+				width: 0%;
+				border: 0px solid black;
+				bottom: 8px;
+				transition: all 200ms ease-in-out;
+				transform: rotate(30deg);
+			}
+
+			.nav-item::before {
+				left: 0;
+			}
+
+			.nav-item::after {
+				right: 0;
+			}
+
+			.nav-item:hover.nav-item::before {
+				border: 1px solid black;
+				width: 50%;
+				transform: rotate(0deg);
+			}
+
+			.nav-item:hover.nav-item::after {
+				border: 1px solid black;
+				width: 50%;
+				transform: rotate(0deg);
+			}
+		</style>
+	</head>
+	<body>
+		<nav>
+			<div class="container">
+				<a href="#">
+					<img src="selman.jpg" alt="logo" class="logo" />
+				</a>
+
+				<ul class="navbar">
+					<li><a href="#" class="nav-item">Home</a></li>
+					<li><a href="#" class="nav-item">Services</a></li>
+					<li><a href="#" class="nav-item">About</a></li>
+					<li><a href="#" class="nav-item">Contact</a></li>
+					<li><a href="#" class="nav-item">Faq</a></li>
+					<li><a href="#" class="nav-item">Sign Up</a></li>
+				</ul>
+			</div>
+		</nav>
+	</body>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Battle || Fork</title>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				padding: 0;
+			}
+
+			body {
+				background: #6591ce;
+				height: 100vh;
+				width: 100%;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+			}
+
+			.box {
+				width: 105px;
+				height: 200px;
+				background: #060e56;
+				position: relative;
+				border-bottom-left-radius: 50%;
+				border-bottom-right-radius: 50%;
+			}
+
+			.box::before {
+				content: "";
+				width: 20px;
+				height: 150px;
+				background: #060e56;
+				position: absolute;
+				bottom: 0;
+				transform: translate(43px, 140px);
+			}
+
+			.one,
+			.one::before,
+			.two,
+			.two::before,
+			.three,
+			.three::before,
+			.box::after {
+				content: "";
+				width: 15px;
+				height: 100px;
+				border-radius: 20px;
+				background: #060e56;
+				position: absolute;
+				top: -5px;
+			}
+
+			.one::before {
+				transform: translate(15px);
+				background: #6591ce;
+			}
+			.two {
+				transform: translate(30px);
+			}
+			.two::before {
+				transform: translate(15px);
+				background: #6591ce;
+			}
+			.three {
+				transform: translate(60px);
+			}
+			.three::before {
+				transform: translate(15px);
+				background: #6591ce;
+			}
+			.box::after {
+				transform: translate(90px);
+			}
+		</style>
+	</head>
+	<body>
+		<div class="box">
+			<div class="divider one"></div>
+			<div class="divider two"></div>
+			<div class="divider three"></div>
+		</div>
+	</body>
+</html>
